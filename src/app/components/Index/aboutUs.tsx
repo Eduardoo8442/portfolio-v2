@@ -10,17 +10,17 @@ export default function AboutUs() {
 
             {/* Descrição */}
             <p className="text-gray-300 text-base leading-relaxed mb-6">
-                Olá! Meu nome é Eduardo, sou apaixonado por tecnologia e especializado no desenvolvimento de APIs e sistemas backend.
-                Meu foco é criar soluções eficientes, seguras e escaláveis, garantindo alta performance e qualidade.
+                Olá! Meu nome é Eduardo de Oliveira, sou desenvolvedor especializado no desenvolvimento de APIs e sistemas.
+                Meu foco é criar e desenvolver sistemas eficientes, seguras e escaláveis, garantindo alta performance e qualidade.
             </p>
 
             {/* Habilidades */}
             <div className="mb-6">
                 <h3 className="text-green-400 text-xl font-semibold mb-4">Habilidades</h3>
                 <ul className="text-gray-300 text-base list-disc ml-6 space-y-2">
-                    <li>Desenvolvimento Backend com Fastify e MySQL</li>
+                    <li>Desenvolvimento Backend com tecnologias atuais</li>
                     <li>APIs RESTful e autenticação JWT</li>
-                    <li>Integração com React e Tailwind CSS</li>
+                    <li>Experiência no desenvolvimento e manutenção de interfaces modernas e responsivas</li>
                     <li>Otimização de performance e escalabilidade</li>
                 </ul>
             </div>

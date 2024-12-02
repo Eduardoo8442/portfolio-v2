@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 
 export default function Main() {
     const [text, setText] = useState<string>('');
+    const [isVisible, setIsVisible] = useState<boolean>(false);
 
     function handleClick() {
-        return window.location.href = 'https://github.com/eduardoo8442';
+        window.location.href = 'https://github.com/eduardoo8442';
     }
 
     useEffect(() => {
@@ -17,19 +18,23 @@ export default function Main() {
             index++;
         }, 10);
 
+        setIsVisible(true);
+
         return () => clearInterval(intervalNick);
     }, []);
 
     return (
-        <div className="h-screen flex items-center"
-          
-        >
-            <div className="text-white text-lg max-w-2xl mx-auto ml-10 md:ml-36">
+        <div className="h-screen flex items-center">
+            <div
+                className={`transition-all duration-700 ease-out transform ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                } text-white text-lg max-w-2xl mx-auto ml-10 md:ml-36`}
+            >
                 <p className="text-green-300 font-mono text-lg mb-2">
                     Olá, meu nome é
                 </p>
                 <h1 className="text-5xl font-bold mb-4">
-                    Eduardo. 👏
+                    Eduardo. 👋
                 </h1>
                 <h2 className="text-4xl font-semibold text-gray-300 mb-6">
                     E sou Engenheiro de software.
