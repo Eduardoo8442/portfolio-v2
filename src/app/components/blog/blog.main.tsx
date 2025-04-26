@@ -8,13 +8,19 @@ export default function BlogMain() {
     }
     return (
         <div>
-          <div onClick={handleClick} className="flex items-center justify-center absolute left-6 top-6 geist cursor-pointer">
-            <FaArrowLeft />
+          <div 
+  onClick={handleClick}
+  className="fixed z-50 flex items-center justify-center cursor-pointer geist
+             bottom-4 right-4 bg-green-500 p-2 rounded-md
+             md:bottom-auto md:right-auto md:top-6 md:left-6 md:bg-opacity-0
+             transition-all duration-300" 
+>
+<FaArrowLeft />
             <p className="ml-2">Voltar para o portfólio</p>
           </div>
           <div>
           <ListBlog />
-          </div>
+</div>
         </div>
     )
 }
