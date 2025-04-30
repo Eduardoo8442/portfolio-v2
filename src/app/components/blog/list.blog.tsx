@@ -113,12 +113,12 @@ export default function ListBlog() {
           
           {post.image && (
             <div className="mb-6 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700">
-             <img
-                src={post.image}
-                  alt="Imagem do post"
-                      className="w-full max-h-[600px] object-contain"
-                    loading="lazy"
-                  />
+            <img
+                 src={post.image}
+                 alt="Imagem do post"
+                  className="w-full h-auto object-cover"
+                 loading="lazy"
+                />
             </div>
           )}
           <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
